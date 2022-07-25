@@ -22,7 +22,6 @@ function CreateNavbar() {
     const menuBtn = createBtn('menuBtn', "Menu");
     const contactBtn = createBtn("contactBtn", 'Contact');
 
-
     navbar.appendChild(homeBtn);
     navbar.appendChild(menuBtn);
     navbar.appendChild(contactBtn);
@@ -49,7 +48,7 @@ function Createfooter(id, text){
 }
 
 
-function loadpage(){
+function loadPage(){
     const content = document.getElementById("content");
 
     const header = createHeader("header", 'Turbo Burger');
@@ -65,4 +64,4 @@ function loadpage(){
     content.appendChild(footer)
 }
 
-export default loadpage;
+export default loadPage();
