@@ -64,4 +64,4 @@ function loadPage(){
     content.appendChild(footer)
 }
 
-export default loadPage();
+export default loadPage;

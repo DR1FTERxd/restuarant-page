@@ -11,7 +11,7 @@ function navigation() {
     const contact = document.getElementById('contactBtn');
     
     home.addEventListener('click', loadHome);
-    menu.addEventListener('onclick', loadMenu);
+    menu.addEventListener('click', loadMenu);
     contact.addEventListener('click', loadContact);
 
 }
@@ -21,5 +21,4 @@ imp()
 
 function imp(){
     loadPage();
-    navigation();
 }
