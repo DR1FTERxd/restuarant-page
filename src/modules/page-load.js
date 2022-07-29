@@ -7,24 +7,16 @@ function createHeader(id, text) {
     return header
 }
 
-function createBtn(id, text){
-    const button= document.createElement("button");
-    button.setAttribute('id', id);
-    button.textContent = text;
-    return button
+function createNavItem(id, text, class){
+    const navItem = document.createElement('li')
+    navItem.setAttribute('id', id);
+    navItem.classList.add(clas)
 }
 
 function CreateNavbar() {
     const navbar = document.createElement('div');
-    navbar.setAttribute('id', 'navbar')
-
-    const homeBtn = createBtn('homeBtn', "Home");
-    const menuBtn = createBtn('menuBtn', "Menu");
-    const contactBtn = createBtn("contactBtn", 'Contact');
-
-    navbar.appendChild(homeBtn);
-    navbar.appendChild(menuBtn);
-    navbar.appendChild(contactBtn);
+    const navbarList = document.createElement('ul');
+    
 
     return navbar
 }
