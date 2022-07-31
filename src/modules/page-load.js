@@ -7,15 +7,31 @@ function createHeader(id, text) {
     return header
 }
 
-function createNavItem(id, text, class){
+function createNavItem(id, text, clas){
     const navItem = document.createElement('li')
     navItem.setAttribute('id', id);
     navItem.classList.add(clas)
+    navItem.textContent = text;
+    
+    return navItem
+
 }
 
-function CreateNavbar() {
+function CreateNavbar(id) {
     const navbar = document.createElement('div');
+    navbar.setAttribute('id', id)
     const navbarList = document.createElement('ul');
+
+    const home = createNavItem('home', 'home', 'navbar_item')
+    const menu = createNavItem('menu', 'menu', 'navbar_item')
+    const contact = createNavItem('contact', 'contact', 'navbar_item')
+
+
+    navbar.appendChild(navbarList)  
+    navbarList.appendChild(home)
+    navbarList.appendChild(menu)
+    navbarList.appendChild(contact)
+    
     
 
     return navbar
@@ -46,7 +62,7 @@ function loadPage(){
     const header = createHeader("header", 'Turbo Burger');
     content.appendChild(header)
 
-    const navbar = CreateNavbar();
+    const navbar = CreateNavbar('navbara');
     content.appendChild(navbar)
 
     const mainScreen = mainaScreen('screen', "aaa");
