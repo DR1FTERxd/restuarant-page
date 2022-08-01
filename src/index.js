@@ -6,9 +6,9 @@ import home from './modules/home';
 
 
 function navigation() {
-    const home = document.getElementById('homeBtn')
-    const menu = document.getElementById('menuBtn');
-    const contact = document.getElementById('contactBtn');
+    const home = document.getElementById('home')
+    const menu = document.getElementById('menu');
+    const contact = document.getElementById('contact');
     
     home.addEventListener('click', loadHome);
     menu.addEventListener('click', loadMenu);
@@ -21,4 +21,5 @@ imp()
 
 function imp(){
     loadPage();
+    navigation();
 }

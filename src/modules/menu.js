@@ -1,33 +1,21 @@
-//import mainaScreen from "./page-load";
+function createMenu(text, id) {
+   const menu = document.createElement('div')
+   menu.setAttribute('id', id)
+   const menutxt = document.createElement('p')
+   menutxt.textContent = text
 
-//function menutxt(text, id) {
-    
-    
-   // const inc = document.createElement('div');
-   // inc.setAttribute('id', id);
-   // const incTxt = document.createElement('p');
-   /// incTxt.textContent = text;
-    //inc.appendChild(incTxt);
-    //return inc;
- 
-    
+   return createMenu
+}
 
 
-//}
+function loadMenu() {
 
-//function loadMenu(){
-   // const content = document.getElementById('screen')
+   const scren = document.getElementById('screen')
 
+   const menu = createMenu()
 
-   // const menu = menutxt();
-   // content.appendChild(menu)
-
-
-//}
-
-//const loadMenu = alert("aaa")
-
-
+   scren.appendChild(menu('asa', 'text'));
+}
 
 
 
