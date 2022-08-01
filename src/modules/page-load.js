@@ -37,9 +37,10 @@ function CreateNavbar(id) {
     return navbar
 }
 
-function mainaScreen(id) {
+function mainaScreen(id, text) {
     const screen = document.createElement('div');
     screen.setAttribute('id', id);
+    screen.textContent = text;
     
 
     return screen

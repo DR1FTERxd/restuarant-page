@@ -21,5 +21,6 @@ imp()
 
 function imp(){
     loadPage();
+    loadMenu();
     navigation();
 }
