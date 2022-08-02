@@ -40,7 +40,7 @@ function CreateNavbar(id) {
 function mainaScreen(id, text) {
     const screen = document.createElement('div');
     screen.setAttribute('id', id);
-    screen.textContent = text;
+    
     
 
     return screen
@@ -66,7 +66,7 @@ function loadPage(){
     const navbar = CreateNavbar('navbara');
     content.appendChild(navbar)
 
-    const mainScreen = mainaScreen('screen', "aaa");
+    const mainScreen = mainaScreen('screen');
     content.appendChild(mainScreen)
     
     const footer = Createfooter('footer', 'Hope we see you in Turbo burger')

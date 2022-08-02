@@ -1,7 +1,7 @@
 import loadPage from './modules/page-load';
-import contact from './modules/contact';
 import loadMenu from './modules/menu';
-import home from './modules/home';
+import loadHome from './modules/home';
+import loadContact from './modules/contact';
 
 
 
@@ -22,5 +22,7 @@ imp()
 function imp(){
     loadPage();
     loadMenu();
+    loadContact();
+    loadHome();
     navigation();
 }
