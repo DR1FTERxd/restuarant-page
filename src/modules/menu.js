@@ -1,6 +1,7 @@
 function createMenu() {
    const menuTab = document.createElement('div')
    menuTab.setAttribute('id', 'menuTab')
+   menuTab.setAttribute('data-tab-item', '#menu')
    const menuTxt1 = document.createElement('h1')
    menuTxt1.setAttribute('id', 'menuTxt1')
    menuTxt1.innerHTML= ('Menu')
@@ -13,8 +14,6 @@ function createMenu() {
    menuTab.appendChild(menuTxt2)
    return menuTab
 }
-
-
 
 
 

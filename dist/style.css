@@ -4,3 +4,11 @@ body{
     
 }
 
+[data-tab-item] {
+    display: none;
+}
+
+.active[data-tab-item] {
+    display: block;
+}
+

@@ -1,6 +1,8 @@
 function createHome() {
     const homeTab =document.createElement('div')
     homeTab.setAttribute('id', 'homeTab')
+    homeTab.setAttribute('data-tab-item', '#home')
+    homeTab.setAttribute('class', 'active')
 
     const homeTxt1 = document.createElement('h1')
     homeTxt1.setAttribute('id', 'homeTxt1')

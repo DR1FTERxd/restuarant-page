@@ -22,10 +22,13 @@ function CreateNavbar(id) {
     navbar.setAttribute('id', id)
     const navbarList = document.createElement('ul');
 
-    const home = createNavItem('home', 'home', 'navbar_item')
-    const menu = createNavItem('menu', 'menu', 'navbar_item')
-    const contact = createNavItem('contact', 'contact', 'navbar_item')
+    const home = createNavItem('home', 'home', 'navbar_item');
+    const menu = createNavItem('menu', 'menu', 'navbar_item');
+    const contact = createNavItem('contact', 'contact', 'navbar_item');
 
+    home.setAttribute('data-tab-target', '#home');
+    menu.setAttribute('data-tab-target', '#menu');
+    contact.setAttribute('data-tab-target', '#contact');
 
     navbar.appendChild(navbarList)  
     navbarList.appendChild(home)
