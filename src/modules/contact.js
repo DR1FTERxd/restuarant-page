@@ -1,7 +1,7 @@
 function createContact() {
     const contactTab = document.createElement('div');
     contactTab.setAttribute('id', 'contactTab');
-    contactTab.setAttribute('data-tab-item', '#contact');
+    contactTab.setAttribute('data-tab-content', '#contact');
     
     const contactTxt1 = document.createElement('h1');
     contactTxt1.setAttribute= ('id', 'contactTxt1');

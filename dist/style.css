@@ -4,11 +4,11 @@ body{
     
 }
 
-[data-tab-item] {
+[data-tab-content] {
     display: none;
 }
 
-.active[data-tab-item] {
+.active[data-tab-content] {
     display: block;
 }
 

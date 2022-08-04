@@ -26,9 +26,9 @@ function CreateNavbar(id) {
     const menu = createNavItem('menu', 'menu', 'navbar_item');
     const contact = createNavItem('contact', 'contact', 'navbar_item');
 
-    home.setAttribute('data-tab-target', '#home');
-    menu.setAttribute('data-tab-target', '#menu');
-    contact.setAttribute('data-tab-target', '#contact');
+    home.setAttribute('data-tab-target', '#homeTab');
+    menu.setAttribute('data-tab-target', '#menuTab');
+    contact.setAttribute('data-tab-target', '#contactTab');
 
     navbar.appendChild(navbarList)  
     navbarList.appendChild(home)

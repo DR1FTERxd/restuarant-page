@@ -18,11 +18,15 @@ import loadContact from './modules/contact';
 
 function navigation() {
 const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        const target =  document.querySelector('[data-tab-item]')
-        target.classList.add('active')
+        const target =  document.querySelector(tab.dataset.tabTarget);
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+        })
+        target.classList.add('active');
     })
 })
 }
