@@ -7,11 +7,11 @@ function createHome() {
 
     const homeTxt1 = document.createElement('h1');
     homeTxt1.setAttribute('id', 'homeTxt1');
-    homeTxt1.innerHTML = ("Home");
+    homeTxt1.innerHTML = ("Hello and Welcome to Turbo Burger, fast food restuarant.");
 
     const homeTxt2 = document.createElement('p');
     homeTxt2.setAttribute('id', 'homeTxt2');
-    homeTxt2.innerHTML = ('Hello and Welcome to Turbo Burger, fast food restuarant.');
+    homeTxt2.innerHTML = ('The fastest delivery food in the country.');
     
 
     const box = document.createElement('div');

@@ -22,9 +22,9 @@ function CreateNavbar(id) {
     navbar.setAttribute('id', id)
     const navbarList = document.createElement('ul');
 
-    const home = createNavItem('home', 'home', 'navbar_item');
-    const menu = createNavItem('menu', 'menu', 'navbar_item');
-    const contact = createNavItem('contact', 'contact', 'navbar_item');
+    const home = createNavItem('home', 'Home', 'navbar_item');
+    const menu = createNavItem('menu', 'Menu', 'navbar_item');
+    const contact = createNavItem('contact', 'Contact', 'navbar_item');
 
     home.setAttribute('data-tab-target', '#homeTab');
     menu.setAttribute('data-tab-target', '#menuTab');
