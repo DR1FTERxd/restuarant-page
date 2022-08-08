@@ -19,10 +19,10 @@ function createHome() {
 
     const photo = document.createElement('img');
     photo.setAttribute('id', 'photo1');
-    photo.src = "./images/screenshot_2022-08-05_13-43-44.png";
+    photo.src = "./images/home1.png";
     const photo2 = document.createElement('img');
     photo2.setAttribute('id', 'photo2');
-    photo2.src = "./images/screenshot_2022-08-06_15-03-29.png"
+    photo2.src = "./images/home2.png"
 
     
 
